@@ -1,0 +1,103 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    min-height: 100vh;
+    background-image: url(bgimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content inside the container */
+}
+
+#taskList {
+    max-height: 180px; /* Restrict to 3 tasks (60px each as an example) */
+    overflow-y: auto; /* Make the task list scrollable */
+    padding: 0 10px; /* Add padding to the left and right */
+    margin: 10px 0; /* Add some spacing above and below */
+}
+
+.task {
+    display: flex;
+    justify-content: space-between; /* Space items across the row */
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid #d9bac9; /* Add border for new tasks */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.task span {
+    font-weight: bold; /* Make task text bold */
+}
+
+.task-number {
+    font-weight: bold; /* Make task number bold */
+    margin-right: 5px; /* Remove extra space between number and text */
+}
+
+.delete-button {
+    background-color: #f78b8b; /* Red background */
+    border: none;
+    color: white; /* White text */
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background-color: #ed626e; /* Darker red on hover */
+}
+
+.in {
+    border: 2px solid rgb(221, 115, 115);
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.button2 {
+    background-color: #f38abd; 
+    border: none;
+    color: rgb(255, 252, 252);
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px; 
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f4669c; 
+    color: rgb(221, 221, 221);
+    padding: 8px 20px; 
+}
+
+#t, h4, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d36666d4;
+}
+
+h5 {
+    text-align: center;
+    color: green;
+}
